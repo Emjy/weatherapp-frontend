@@ -8,7 +8,7 @@ document.querySelector('#register').addEventListener('click', () => {
     let password = document.querySelector('#registerPassword').value;
 
 
-    fetch('https://weatherapp-backend-mauve.vercel.app/users/signup', {
+    fetch('https://weatherapp-backend-plum-beta.vercel.app/users/signup', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email, password }),
@@ -28,7 +28,7 @@ document.querySelector('#connection').addEventListener('click', () => {
     let email = document.querySelector('#registerEmail').value;
     let password = document.querySelector('#registerPassword').value;
 
-    fetch('https://weatherapp-backend-mauve.vercel.app/users/signin', {
+    fetch('https://weatherapp-backend-plum-beta.vercel.app/users/signin', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),
