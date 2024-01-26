@@ -35,6 +35,8 @@ function updateDeleteCityEventListener() {
 	}
 }
 
+//
+
 document.querySelector('#addCity').addEventListener('click', function () {
 	const cityName = document.querySelector('#cityNameInput').value;
 
@@ -42,7 +44,7 @@ document.querySelector('#addCity').addEventListener('click', function () {
 		method: 'POST',
 		headers: { 'Content-Type': 'application/json' },
 		body: JSON.stringify({ cityName }),
-	}).then(response => response.json())
+	}).then(response => response.json())   
 		.then(data => {
 			if (data.result) {
 				document.querySelector('#cityList').innerHTML += `
