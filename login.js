@@ -18,7 +18,7 @@ document.querySelector('#register').addEventListener('click', () => {
                 window.location.assign("index.html")
 
             }
-        })
+        }).catch((error) => console.log(error))
 
 })
 
@@ -39,6 +39,6 @@ document.querySelector('#connection').addEventListener('click', () => {
                 return true
             }
 
-        })
+        }).catch((error) => console.log(error))
 
 })
